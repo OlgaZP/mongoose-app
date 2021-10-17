@@ -1,0 +1,28 @@
+POST http://127.0.0.1:5000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Mongoose Name 3",
+    "lastName": "Mongoose Lastname 3",
+    "email": "memail3@gmail.com",
+    "birthday": "1990-10-12",
+    "workExperience": 12
+}
+
+###
+GET http://127.0.0.1:5000/api/users HTTP/1.1
+
+###
+GET http://127.0.0.1:5000/api/users/616c398f0147bebe865bccd3 HTTP/1.1
+
+###
+PATCH http://127.0.0.1:5000/api/users/616c37793378cd4ad2e0d65b HTTP/1.1
+Content-Type: application/json
+
+{
+    "workExperience": 3,
+    "isMerried": true   
+}
+
+###
+DELETE http://127.0.0.1:5000/api/users/616c398f0147bebe865bccd3 HTTP/1.1
